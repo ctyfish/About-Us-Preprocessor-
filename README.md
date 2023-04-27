@@ -10,11 +10,11 @@ $ yarn
 ```
 ### Step2: Use the command to compile 'Pug' file under folder 'app'
 ```
-yarn pug3 ./app/aboutus.pug -o ./dist/ -P
+$ yarn pug3 ./app/aboutus.pug -o ./dist/ -P
 ```
 ### Step3: Use the command to compile 'Sass' file under folder 'app'
 ```
-yarn node-sass ./app/aboutus.sass -o ./dist/ -P
+$ yarn node-sass ./app/aboutus.sass -o ./dist/ -P
 ```
 After step2 and step3, you will see the 'HTML' and 'CSS' files converted from 'Pug' and 'Sass' files in the folder 'dist'
 ### Step4: Hooray! Open the webpage

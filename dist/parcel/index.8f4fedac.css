@@ -1,0 +1,25 @@
+#container {
+  justify-content: space-around;
+  display: flex;
+}
+
+#container button {
+  color: #fff;
+  padding: 15px;
+}
+
+#container button:nth-child(1) {
+  background-color: red;
+  border-radius: 40px;
+}
+
+#container button:nth-child(2) {
+  background-color: green;
+  border-radius: 40px;
+}
+
+#container button:nth-child(3) {
+  background-color: #00f;
+  border-radius: 40px;
+}
+

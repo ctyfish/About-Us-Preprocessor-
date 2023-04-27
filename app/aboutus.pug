@@ -1,0 +1,133 @@
+html 
+    head 
+        meta(charset="utf-8")
+        meta(content="width=device-width, initial-scale=1", name="viewport")
+        title About Us
+        //Bootstrap5 CSS
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU", crossorigin="anonymous")
+        link(href="./aboutus.css", rel="stylesheet", type="text/css")
+    body
+        //Navbar
+        nav.navbar.navbar-expand-lg.fixed-top.navbar-light(style="background-color:#FFFAE7;box-shadow:0px 3px 3px rgba(0, 0, 0, 0.25);position: sticky;")
+            .container-fluid
+                a.navbar-brand(href="#")
+                    img(src="./icon/platformlogo.png", alt="", width="45", height="45")
+                button.navbar-toggler(style="color:#573605;", type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+                    span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarSupportedContent
+                    ul.navbar-nav.me-auto.mb-lg-0
+                        li.nav-item
+                            a.nav-link.active(aria-current="page", style="color:#573605;font-weight:500;", href="#") 首頁
+                        li.nav-item
+                            a.nav-link.active(aria-current="page", style="color:#573605;font-weight:500;", href="#") 關於我們
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(style="color:#573605;font-weight:500;", href="#", id="navbarDropdown", role="button", data-bs-toggle="dropdown", aria-expanded="false") 共享分類
+                            ul.dropdown-menu(style="background-color:#FFFAE7;", aria-labelledby="navbarDropdown")
+                                li
+                                    a.dropdown-item(style="color:#573605;font-weight:500;", href="#") 食
+                                li
+                                    a.dropdown-item(style="color:#573605;font-weight:500;", href="#") 衣
+                                li
+                                    a.dropdown-item(style="color:#573605;font-weight:500;", href="#") 住
+                                li
+                                    a.dropdown-item(style="color:#573605;font-weight:500;", href="#") 行
+                        li.nav-item
+                            a.nav-link.active(aria-current="page", style="color:#573605;font-weight:500;", href="#") 聯絡我們
+                    ul.navbar-nav
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(style="color:#573605;font-weight:500;", href="#", id="navbarDropdown", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+                                img(src="./icon/membericon.png", width="15", height="20")
+                            ul.dropdown-menu.dropdown-menu-end(style="background-color:#FFFAE7;", aria-labelledby="navbarDropdown")
+                                li
+                                    a.dropdown-item(style="color:#573605;font-weight:500;", href="#") 會員登入
+        //Group Photo
+        div#carouselExampleInterval.carousel.slide(data-bs-ride="carousel")
+            div.carousel-inner
+                div.carousel-item.active(data-bs-interval="4000")
+                    img.d-block.w-100(src="./icon/DSC06588.JPG")
+                div.carousel-item(data-bs-interval="4000")
+                    img.d-block.w-100(src="./icon/DSC06595.JPG")
+                div.carousel-item
+                    img.d-block.w-100(src="./icon/DSC06597.JPG")
+            button.carousel-control-prev(type="button", data-bs-target="#carouselExampleInterval", data-bs-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.visually-hidden Previous 
+            button.carousel-control-next(type="button", data-bs-target="#carouselExampleInterval", data-bs-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.visually-hidden Next
+        //Introduction
+        .container-fluid
+            .row
+                .col-md-1.mt-5
+                .col-md-5.mt-5
+                    .row.mb-5
+                        p(style='color:#573605;font-weight:700;font-size:3vh;') | 平台創立宗旨 |
+                        p(style='color:#573605;font-weight:500;font-size:2.5vh;letter-spacing:1px;') 我們的團隊有鑑於目前的共享平台都是提供單一化的服務，假如一個使用者同時有共享乘車與共享房間的需求，那他就需要分別到兩個平台去加入會員並尋找資源。於是我們推出了“享都不用想”這個共享資源平台，提供資源擁有者與需求者一個更便利的環境，在一個網站、辦一個會員，就可以滿足所有需求。
+                    .row
+                        p(style='color:#573605;font-weight:700;font-size:3vh;') | 平台功能簡介 |
+                        p(style='color:#573605;font-weight:500;font-size:2.5vh;letter-spacing:1px;') “享都不用想”共享資源平台提供所有使用者一個可以上架或尋找各類共享資源的環境，資源需求者可以透過平台設置的分類或關鍵字搜尋功能去尋找資源，而上架資源者只需上傳圖片、設定金額與撰寫相關資訊即可在平台上架共享資源。現在加入會員填寫基本資料後，就可以開啟在“享都不用想”的共享之旅了！
+                .col-md-1.mt-5
+                .col-md-4.mt-4
+                    #myCarousel.carousel.slide(data-bs-ride='carousel')
+                        .carousel-indicators
+                            button.active(type='button', data-bs-target='#myCarousel', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+                            button(type='button', data-bs-target='#myCarousel', data-bs-slide-to='1', aria-label='Slide 2')
+                            button(type='button', data-bs-target='#myCarousel', data-bs-slide-to='2', aria-label='Slide 3')
+                            button(type='button', data-bs-target='#myCarousel', data-bs-slide-to='3', aria-label='Slide 4')
+                            button(type='button', data-bs-target='#myCarousel', data-bs-slide-to='4', aria-label='Slide 5')
+                            button(type='button', data-bs-target='#myCarousel', data-bs-slide-to='5', aria-label='Slide 6')
+                        .carousel-inner
+                            .carousel-item.active(data-bs-interval='4000')
+                                h5(style='color:#573605;font-weight:700;text-align: center;') Designer / 李婉妤
+                                img.d-block.w-100(src='./icon/DSC06535.JPG')
+                            .carousel-item(data-bs-interval='4000')
+                                h5(style='color:#573605;font-weight:700;text-align: center;') Engineer / 林佳玉
+                                img.d-block.w-100(src='./icon/DSC06546.JPG')
+                            .carousel-item(data-bs-interval='4000')
+                                h5(style='color:#573605;font-weight:700;text-align: center;') Engineer / 林顥閔
+                                img.d-block.w-100(src='./icon/DSC06552.JPG')
+                            .carousel-item(data-bs-interval='4000')
+                                h5(style='color:#573605;font-weight:700;text-align: center;') Engineer / 陳采妤
+                                img.d-block.w-100(src='./icon/DSC06559.JPG')
+                            .carousel-item(data-bs-interval='4000')
+                                h5(style='color:#573605;font-weight:700;text-align: center;') Engineer / 賴溡雨
+                                img.d-block.w-100(src='./icon/DSC06564.JPG')
+                            .carousel-item(data-bs-interval='4000')
+                                h5(style='color:#573605;font-weight:700;text-align: center;') Designer / 李姸蓉
+                                img.d-block.w-100(src='./icon/DSC06573.JPG')
+                .col-md-1.mt-5
+        //Bottom
+        footer.container-fluid.mt-4(style="background-color: #927858;")
+            .row
+                .col-md-5
+                    .row
+                        .col-md-3.mt-3
+                            img(src="./icon/platformlogo.png", width="105", height="105")
+                        .col-md-4.mt-5.mb-5
+                            h3(style="color:#FFFFFF;font-weight:700;") 享都不用想
+                .col-md-2
+                .col-md-5.mt-3
+                    .row
+                        .col-md-3
+                            a(style="color:#FFFFFF;font-weight:500;text-decoration:none;", href="#") 首頁
+                        .col-md-3
+                            a(style="color:#FFFFFF;font-weight:500;text-decoration:none;", href="#") 關於我們
+                        .col-md-3
+                            a(style="color:#FFFFFF;font-weight:500;text-decoration:none;", href="#") 共享分類
+                        .col-md-3
+                            a(style="color:#FFFFFF;font-weight:500;text-decoration:none;", href="#") 聯絡我們
+                    .row
+                        .col-md-8.mt-3
+                            p(style="color:#FFFFFF;font-weight:500;overflow:hidden;") service@sharewithoutthinking.com
+                            p(style="color:#FFFFFF;font-weight:500;") 06-123-4567
+                        .col-md-4.mt-4
+                            .row
+                                .col-md-3
+                                    img(src="./icon/facebook icon.png", width="24", height="24")
+                                .col-md-3
+                                    img(src="./icon/instagram icon.png", width="24", height="24")
+                                .col-md-3
+                                    img(src="./icon/youtube icon.png", width="24", height="24")
+        //Javascript bundle with popper
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" , integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" , crossorigin="anonymous")
+        
